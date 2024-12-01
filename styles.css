@@ -1,0 +1,36 @@
+body {
+    display: flex;
+    flex-direction: row;
+    font-family: Arial, sans-serif;
+}
+
+main {
+    display: flex;
+    flex: 1;
+    padding: 20px;
+}
+
+#todo-section, #media-section, #news-weather-section {
+    flex: 1;
+    margin-right: 20px;
+}
+
+#gesture-guide {
+    width: 250px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.gesture {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.gesture img {
+    width: 50px; /* Adjust size as needed */
+    height: 50px; /* Adjust size as needed */
+    margin-right: 10px;
+}
