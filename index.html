@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Voice and Gesture Controlled App</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/handpose"></script>
+</head>
+<body>
+    <header>
+        <h1>Voice and Gesture Controlled App</h1>
+    </header>
+    <main>
+        <section id="todo-section">
+            <h2>Voice-Controlled To-Do List</h2>
+            <div id="task-input">
+                <button id="start-voice-button">Start Voice Command</button>
+            </div>
+            <ul id="task-list"></ul>
+            <p>Commands: "Add task [task name]", "Remove task [task name]", "Show tasks"</p>
+        </section>
+        <section id="media-section">
+            <h2>Gesture-Controlled Media Player</h2>
+            <video id="media-player" width="320" height="240" controls>
+                <source src="C:/Users/User/projects/patternprint/project/New Tab - Google Chrome 2023-08-05 22-34-46.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p>Show your hand gestures to control the media.</p>
+        </section>
+        <section id="news-weather-section">
+            <h2>Voice and Gesture Controlled News & Weather</h2>
+            <div id="news-output"></div>
+            <div id="weather-output"></div>
+            <button id="get-news-button">Get News</button>
+            <button id="get-weather-button">Get Weather</button>
+            <p>Commands: "Get news", "Get weather"</p>
+        </section>
+        <aside id="gesture-guide">
+            <h2>Gesture Controls</h2>
+            <div class="gesture">
+                <img src="thumbs-up.png" alt="Thumbs Up" />
+                <p>Thumbs Up: Play</p>
+            </div>
+            <div class="gesture">
+                <img src="open-hand.png" alt="Open Hand" />
+                <p>Open Hand: Pause</p>
+            </div>
+            <div class="gesture">
+                <img src="swipe-right.png" alt="Swipe Right" />
+                <p>Swipe Right: Next</p>
+            </div>
+            <div class="gesture">
+                <img src="swipe-left.png" alt="Swipe Left" />
+                <p>Swipe Left: Previous</p>
+            </div>
+            <div class="gesture">
+                <img src="two-fingers.png" alt="Two Fingers" />
+                <p>Two Fingers: Get News</p>
+            </div>
+            <div class="gesture">
+                <img src="fist.png" alt="Fist" />
+                <p>Fist: Get Weather</p>
+            </div>
+            <div class="gesture">
+                <img src="stop.png" alt="Stop Gesture" />
+                <p>Stop Gesture: Stop Camera</p>
+            </div>
+        </aside>
+    </main>
+    <script src="app1.js"></script>
+</body>
+</html>
