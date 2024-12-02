@@ -1,36 +1,41 @@
 body {
-    display: flex;
-    flex-direction: row;
     font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-main {
-    display: flex;
-    flex: 1;
+header {
+    text-align: center;
     padding: 20px;
 }
 
-#todo-section, #media-section, #news-weather-section {
-    flex: 1;
-    margin-right: 20px;
-}
-
-#gesture-guide {
-    width: 250px;
+section {
+    margin: 20px;
     padding: 20px;
-    background-color: #f9f9f9;
-    border: 1px solid #ccc;
+    background-color: #fff;
     border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.gesture {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
+#task-input {
+    text-align: center;
+    margin: 20px 0;
 }
 
-.gesture img {
-    width: 50px; /* Adjust size as needed */
-    height: 50px; /* Adjust size as needed */
-    margin-right: 10px;
+button {
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
 }
